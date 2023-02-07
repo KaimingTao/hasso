@@ -1,10 +1,10 @@
 build:
-	python -m pip install --upgrade build
-	python -m build
+	./env/bin/python -m pip install --upgrade build
+	./env/bin/python -m build
 
 release:
-	python -m pip install --upgrade twine
-	python -m twine upload dist/*
+	./env/bin/python -m pip install --upgrade twine
+	./env/bin/python -m twine upload dist/*
 
 
 .PHONY:
