@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "hasso"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Kaiming Tao", email="mads396@gmail.com" },
 ]
@@ -16,6 +16,9 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+  'ruamel.yaml'
 ]
 
 [project.urls]
