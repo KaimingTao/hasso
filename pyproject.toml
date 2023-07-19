@@ -5,11 +5,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "hasso"
-version = "0.0.2"
+description = "A simple library for data analysis"
+version = "0.0.3"
 authors = [
   { name="Kaiming Tao", email="mads396@gmail.com" },
 ]
-description = "Python library"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
