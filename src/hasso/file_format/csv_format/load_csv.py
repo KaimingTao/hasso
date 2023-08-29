@@ -1,6 +1,10 @@
 import csv
+from .argument import check_argument
+from .converter.func import convert_table
 
 
+@convert_table
+@check_argument
 def load_csv(
         file_path,
         encoding='utf-8-sig'):
@@ -11,14 +15,3 @@ def load_csv(
             table.append(record)
 
     return table
-
-
-def dump_csv(file_path, table, headers):
-
-    with open(file_path, 'w', encoding='utf-8-sig') as fd:
-        writer = csv.DictWriter(fd, fieldnames=headers)
-        writer.writeheader()
-        writer.writerows(table)
-
-
-
