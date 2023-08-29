@@ -13,7 +13,13 @@ build:
 
 release:
 	./env/bin/python -m pip install --upgrade twine
-	./env/bin/python -m twine upload dist/*
+	./env/bin/python -m twine upload dist/* --verbose
+
+test:
+	./env/bin/pip install -e .
+
+untest:
+	./env/bin/pip uninstall hasso
 
 .PHONY:
-	init dep all build
+	init freeze build release test untest
