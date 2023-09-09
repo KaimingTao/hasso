@@ -1,7 +1,7 @@
 from functools import wraps
 from pathlib import Path
 from .func_mode import get_func_mode
-from logging import warning
+import warnings
 
 
 def check_argument(func):
@@ -32,7 +32,7 @@ def check_table(args, func_mode):
     file_path = args[0]
     table = args[1]
     if not table:
-        warning.warn(f'{file_path} table is empty.')
+        warnings.warn(f'{file_path} table is empty.')
 
     return args
 
