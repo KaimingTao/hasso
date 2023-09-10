@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 [project]
 name = "hasso"
 description = "A simple library for data analysis"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
   { name="Kaiming Tao", email="mads396@gmail.com" },
 ]
