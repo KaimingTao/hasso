@@ -9,6 +9,6 @@ asserter = lambda x: type(x) == str
 # TODO should test all cell in the column
 converter = lambda x: {
             i: k
-            for k, v in BOOLEAN_TABLE
+            for k, v in BOOLEAN_TABLE.items()
             for i in v
         }.get(x, x)

@@ -40,7 +40,7 @@ def apply_converters(table, converters):
     # print(converters)
     for c in converters:
         arg = None
-        if type(c) == list:
+        if type(c) in (list, tuple):
             c, arg = c
         if type(c) == str:
             c = CONVERTERS.get(c)
