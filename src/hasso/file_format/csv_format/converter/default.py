@@ -30,6 +30,7 @@ DEFAULT_LOAD_CONVERTERS = [
     'trim_string_by_cell',
     'remove_blank_row',
     'to_integer_cell',
+    # 'boolean_from_str', TODO
 ]
 default_load = ConverterList()
 for i in DEFAULT_LOAD_CONVERTERS:
